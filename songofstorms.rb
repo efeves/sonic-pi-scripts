@@ -5,6 +5,7 @@
 use_bpm 170
 h = :drum_snare_soft
 intro = 120
+p = 1
 
 1.times do
   use_bpm intro
@@ -95,34 +96,35 @@ end
 
 live_loop :bassclef do
   use_synth :piano
-  play :d2
+  play :d2, amp: p
   sleep 1
   2.times do
-    play :f3
-    play :a4
+    play :f3, amp: p 
+    play :a4, amp: p
     sleep 1
   end
-  play :e2
+  play :e2, amp: p
   sleep 0.5
-  play :e3
+  play :e3, amp: p
   sleep 0.5
-  play :g, release: 1.5
-  play :b4, release: 1.5
+  play :g, release: 1.5, amp: p
+  play :b4, release: 1.5, amp: p
   sleep 2
-  play :f2
+  play :f2, amp: p
   sleep 1
   2.times do
-    play :g4
-    play :c5
+    play :g4, amp: p
+    play :c5, amp: p
     sleep 1
   end
-  play :e2
+  play :e2, amp: p
   sleep 0.5
-  play :e3
+  play :e3, amp: p
   sleep 0.5
-  play :g, release: 1.5
-  play :b4, release: 1.5
+  play :g, release: 1.5, amp: p
+  play :b4, release: 1.5, amp: p
   sleep 2
+  p=p+1
 end
 
 sleep 24
