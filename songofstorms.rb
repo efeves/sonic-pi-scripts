@@ -1,3 +1,7 @@
+#Song name is Song of Storms from the legend of Zelda 
+#find it here: https://musescore.com/user/4957541/scores/1545401
+#Song bpm was found here: https://musescore.com/user/4957541/scores/1545401
+
 use_bpm 170
 h = :drum_snare_soft
 intro = 120
