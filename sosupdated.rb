@@ -1,3 +1,7 @@
+#Song name is Song of Storms from the legend of Zelda 
+#find it here: https://musescore.com/user/4957541/scores/1545401
+#Song bpm was found here: https://musescore.com/user/4957541/scores/1545401
+
 use_bpm 170
 h = :drum_snare_soft
 intro = 120
@@ -285,7 +289,6 @@ end
 
 live_loop :kick do
   sync :hihat
-  
   sample g, amp: j
   sleep 3
 end
@@ -298,21 +301,21 @@ live_loop :hihat do
 end
 
 live_loop :bassclef do
-  bassclef
+  bassclef #use defined function
 end
 
 sleep 24
 
 live_loop :treblepiano do
   sync :bassclef
-  treblepiano
+  treblepiano #use defined function
 end
 
 sleep 48
 
 live_loop :trebleoverlay do
   sync :bassclef
-  trebleoverlay
+  trebleoverlay #use defined function
   t=0
   j=0
 end
