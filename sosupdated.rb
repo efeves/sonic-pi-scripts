@@ -35,7 +35,7 @@ define :introduction do
   sleep 0.5
   play :a, release: 1.5
   sleep 2
-  play array[0]
+  play array[0] #these lines are for the array; i was getting an error when i tried to include it in a loop. I orriginally tried to put it in the 2.times do loop, but an error challenged the play ("array cannot be in a number loop" or something like that)
   sleep sleeps[0]
   play array[1]
   sleep sleeps[1]
