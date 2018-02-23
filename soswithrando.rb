@@ -281,27 +281,26 @@ end
 #end defined functions
 1.times do
   use_bpm intro
-  introduction
+  introduction #play the function "introduction" as is defined above
 end
 
 live_loop :kick do
   sync :hihat
-  
   sample g, amp: j
   sleep 3
 end
 
 live_loop :hihat do
-  o=rrand(0.5,1)
+  o=rrand(0.5,1) #randomize every time the loop comes back to the top of its code.
   with_fx :hpf do
     sample h, amp: o #o is the random variable in this case randomizing between 0.5 and 1
-    print o
+    print o #prove that it is randomized by printing the value 'o' to the log
     sleep 1
   end
 end
 
 live_loop :bassclef do
-  bassclef
+  bassclef #perform the functioned as defined above
 end
 
 sleep 24
