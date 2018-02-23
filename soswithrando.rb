@@ -32,8 +32,8 @@ define :introduction do
   sleep 0.5
   play :a, release: 1.5
   sleep 2
-  play array[0]
-  sleep sleeps[0]
+  play array[0] #call array at place 0
+  sleep sleeps[0] #call sleep array at place 0
   play array[1]
   sleep sleeps[1]
   play array[2]
