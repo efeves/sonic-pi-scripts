@@ -165,17 +165,13 @@ define :drums do
 end
 
 define :outro do
-  live_loop :down do
+  4.times do
     sample whoo, amp: y, release: 0.2
     sleep sample_duration whoo
     sleep 0.2
-    if y == 0
-      stop
-    else
       l=rrand_i(0.5, 0)
       y=y-l
       print y
-    end
   end
 end
 #////////////////////////////////////////////////////////////////////////////////////////////
